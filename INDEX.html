@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="s-color" content="#b52b52">
+  <title>Delícias da Joana</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIj4KPHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIHJ4PSI5MCIgZmlsbD0iI2ZmZjBlZiIvPgo8Y2lyY2xlIGN4PSIzNTAiIGN5PSIzNTAiIHI9IjI3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzgzZTYxIiBzdHJva2Utd2lkdGg9IjkiLz4KPHBhdGggZD0iTTI0NSAyMTBjLTgtNzAgMjUtMTAyIDY1LTEwMiAyMiAwIDM5IDExIDUwIDI3IDExLTE2IDI4LTI3IDUwLTI3IDQwIDAgNzMgMzIgNjUgMTAyIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM2ZDI1MzIiIHN0cm9rZS13aWR0aD0iMTAiLz4KPHBhdGggZD0iTTI0NSAyMDRoMjEwdjQ1YzAgMjgtMjMgNTEtNTEgNTFIMjk2Yy0yOCAwLTUxLTIzLTUxLTUxeiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNmQyNTMyIiBzdHJva2Utd2lkdGg9IjEwIi8+CjxwYXRoIGQ9Ik0zNTAgMjIyYy0xOC0yNS01NS00LTU1IDIzIDAgMzEgNTUgNTkgNTUgNTlzNTUtMjggNTUtNTljMC0yNy0zNy00OC01NS0yM3oiIGZpbGw9IiNjODNlNjEiLz4KPHRleHQgeD0iMzUwIiB5PSIzOTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNmQyNTMyIj5EZWzDrWNpYXMgZGE8L3RleHQ+Cjx0ZXh0IHg9IjM1MCIgeT0iNDg1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMDAiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2ZDI1MzIiPkpvYW5hPC90ZXh0Pgo8cGF0aCBkPSJNMTcwIDUyMGgxNTBNMzgwIDUyMGgxNTAiIHN0cm9rZT0iIzZkMjUzMiIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTM1MCA1MDVjLTE0LTIwLTQ1LTMtNDUgMTggMCAyNiA0NSA0OSA0NSA0OXM0NS0yMyA0NS00OWMwLTIxLTMxLTM4LTQ1LTE4eiIgZmlsbD0iI2M4M2U2MSIvPgo8dGV4dCB4PSIzNTAiIHk9IjYxMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGxldHRlci1zcGFjaW5nPSI5IiBmaWxsPSIjNmQyNTMyIj5QQVNURUxBUklBPC90ZXh0Pgo8L3N2Zz4=">
+  <style>
+:root{
+  --wine:#7b2035; --pink:#c83e61; --soft:#fff4f1; --cream:#fffaf6;
+  --ink:#351c20; --muted:#795f63; --line:#f0d8d5; --white:#fff;
+}
+*{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+button,input,textarea,select{font:inherit} button,a{cursor:pointer}
+.topbar{position:sticky;top:0;z-index:20;height:68px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 18px}
+.logo-mini{height:50px;width:auto}.icon-btn,.cart-btn{border:0;background:transparent;font-size:24px}.cart-btn{position:relative}.cart-btn span{position:absolute;top:-3px;right:-8px;background:var(--pink);color:#fff;border-radius:50%;font-size:11px;min-width:19px;height:19px;display:grid;place-items:center}
+main{max-width:1050px;margin:auto;padding:22px 18px 100px}.view{display:none}.view.active{display:block}
+.hero{background:linear-gradient(135deg,#fff1ee,#f9d8d9);border-radius:28px;padding:28px;display:flex;align-items:center;justify-content:space-between;min-height:240px;box-shadow:0 12px 35px #6b263010}.hero h1{font-size:clamp(34px,7vw,58px);margin:7px 0;font-family:Georgia,serif;color:var(--wine)}.hero p{color:var(--muted)}.hero-emoji{font-size:100px}
+.eyebrow{letter-spacing:3px;font-size:12px;font-weight:800;color:var(--pink)}
+.primary,.secondary,.google-btn{border:0;border-radius:14px;padding:13px 18px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+.primary{background:var(--wine);color:#fff}.secondary{background:#fff0ef;color:var(--wine);border:1px solid var(--line)}.google-btn{background:#fff;border:1px solid var(--line);color:var(--ink);width:100%;margin-top:10px}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin:28px 0 14px}.section-head h2{margin:0}.section-head button{border:0;background:none;color:var(--wine);font-weight:700}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.product{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 22px #55202a08}.product-img{height:160px;background:linear-gradient(135deg,#fbe2dd,#fff);display:grid;place-items:center;font-size:60px;overflow:hidden}.product-img img{width:100%;height:100%;object-fit:cover}.product-body{padding:15px}.product h3{margin:0 0 6px}.product p{margin:0 0 12px;color:var(--muted);font-size:14px;min-height:38px}.price{font-size:20px;font-weight:900;color:var(--wine)}.product-row{display:flex;justify-content:space-between;align-items:center;gap:10px}.add{border:0;background:var(--pink);color:#fff;border-radius:12px;padding:10px 12px;font-weight:800}.tag{display:inline-block;background:#ffe0e5;color:var(--wine);padding:4px 8px;border-radius:999px;font-size:11px;font-weight:800;margin-bottom:7px}
+.page-title{margin:10px 0 22px}.page-title h2{font-size:30px;margin-bottom:4px}.page-title p{color:var(--muted)}
+.filters{display:flex;gap:8px;overflow:auto;margin-bottom:18px}.filter{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px}.filter.active{background:var(--wine);color:#fff}
+.contact-card{margin-top:28px;padding:22px;border-radius:22px;background:#fff;border:1px solid var(--line)}.contact-card p{margin:7px 0;color:var(--muted)}.contact-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.cart-line{background:#fff;border:1px solid var(--line);padding:14px;border-radius:16px;margin-bottom:10px;display:flex;justify-content:space-between;gap:15px;align-items:center}.qty{display:flex;align-items:center;gap:8px}.qty button{border:0;border-radius:8px;background:#ffe8e5;width:30px;height:30px}.summary{background:#fff;border:1px solid var(--line);padding:18px;border-radius:18px;margin-top:18px}.summary .total{display:flex;justify-content:space-between;font-size:22px;font-weight:900;margin-bottom:15px}
+.order,.message,.notification{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:12px}.order-head{display:flex;justify-content:space-between;gap:12px}.status{border-radius:999px;padding:5px 9px;background:#fff0d5;color:#7a5010;font-size:12px;font-weight:800}.messages{min-height:100px}.message.from-admin{background:#fff0f1}.message-form textarea{width:100%;min-height:100px;padding:13px;border:1px solid var(--line);border-radius:14px;resize:vertical}.message-form .primary{margin-top:8px}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;height:70px;background:#fff;border-top:1px solid var(--line);z-index:30;display:flex;justify-content:space-around;gap:2px;padding:0 3px;box-shadow:0 -5px 18px #55202a0b}.bottom-nav button{position:relative;flex:1;min-width:0;max-width:150px;border:0;background:none;color:var(--muted);font-size:19px;padding:5px 2px}.bottom-nav button.active{color:var(--wine);font-weight:900}.bottom-nav .admin-nav-btn{color:var(--wine)}.bottom-nav span{display:block;font-size:10px;margin-top:3px;white-space:nowrap}.badge{position:absolute;top:4px;right:22%;background:var(--pink);color:#fff;border-radius:999px;padding:2px 5px;font-size:9px}
+.side-menu{position:fixed;inset:0;background:#0007;z-index:50;display:none}.side-menu.open{display:block}.menu-inner{height:100%;width:min(330px,90%);background:#fff;padding:20px;overflow:auto}.close{border:0;background:none;font-size:23px;float:right}.menu-logo{width:190px;display:block;clear:both;margin:25px auto}.menu-inner>button:not(.close){width:100%;border:0;background:#fff;text-align:left;padding:13px;border-radius:10px;margin:2px 0}.menu-inner>button:not(.close):hover{background:#fff0ef}.user-box{padding:12px;background:#fff6f4;border-radius:12px;margin-bottom:10px;color:var(--muted)}.contact-mini{margin-top:18px;border-top:1px solid var(--line);padding-top:15px}.contact-mini a{display:block;padding:8px;color:var(--wine);text-decoration:none}
+.admin-access-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;margin:10px 0 18px;box-shadow:0 8px 24px #55202a08}.admin-access-card h2{margin-top:0;color:var(--wine)}.admin-access-card p{color:var(--muted)}.admin-access-card input{display:block;width:100%;box-sizing:border-box;padding:13px;margin:10px 0 12px;border:1px solid var(--line);border-radius:12px}.admin-access-card .primary{width:100%}.admin-tabs{display:flex;gap:8px;margin-bottom:15px}.admin-tabs button{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:10px}.admin-panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}.hidden{display:none!important}.admin-form{display:grid;gap:10px;margin-bottom:18px}.admin-form input,.admin-form textarea,.admin-form select{border:1px solid var(--line);border-radius:10px;padding:11px}.check{font-size:14px}.admin-product{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:12px 0}.admin-product button{border:0;background:#ffe9e7;border-radius:8px;padding:7px}
+.splash{position:fixed;inset:0;z-index:100;background:linear-gradient(135deg,#fff7f2,#f8d5d8);display:grid;place-items:center;padding:20px}.splash-card{width:min(470px,100%);text-align:center}.logo-large{width:min(310px,75vw);filter:drop-shadow(0 12px 20px #67202b15)}.splash-card p{font-family:Georgia,serif;font-size:20px;color:var(--wine);font-style:italic}.splash-card .primary,.splash-card .google-btn{max-width:350px;margin-left:auto;margin-right:auto}
+.intro-progress{max-width:350px;margin:22px auto 12px}
+.intro-percent{font-size:30px;font-weight:900;color:var(--wine);margin-bottom:10px}
+.intro-track{height:10px;background:#f0d8d5;border-radius:999px;overflow:hidden}
+.intro-bar{height:100%;width:0%;background:linear-gradient(90deg,var(--pink),var(--wine));border-radius:999px;transition:width .08s linear}
+.intro-progress small{display:block;margin-top:9px;color:var(--muted)}
+
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:#351c20;color:#fff;padding:12px 17px;border-radius:12px;opacity:0;pointer-events:none;transition:.25s;z-index:200}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:600px){.hero{padding:22px}.hero-emoji{font-size:70px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-img{height:125px}.product h3{font-size:15px}.product p{font-size:12px}.contact-actions a{flex:1}.bottom-nav{height:66px}.bottom-nav button{font-size:17px}.bottom-nav span{font-size:9px}}
+
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div id="splash" class="splash">
+    <div class="splash-card">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIj4KPHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIHJ4PSI5MCIgZmlsbD0iI2ZmZjBlZiIvPgo8Y2lyY2xlIGN4PSIzNTAiIGN5PSIzNTAiIHI9IjI3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzgzZTYxIiBzdHJva2Utd2lkdGg9IjkiLz4KPHBhdGggZD0iTTI0NSAyMTBjLTgtNzAgMjUtMTAyIDY1LTEwMiAyMiAwIDM5IDExIDUwIDI3IDExLTE2IDI4LTI3IDUwLTI3IDQwIDAgNzMgMzIgNjUgMTAyIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM2ZDI1MzIiIHN0cm9rZS13aWR0aD0iMTAiLz4KPHBhdGggZD0iTTI0NSAyMDRoMjEwdjQ1YzAgMjgtMjMgNTEtNTEgNTFIMjk2Yy0yOCAwLTUxLTIzLTUxLTUxeiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNmQyNTMyIiBzdHJva2Utd2lkdGg9IjEwIi8+CjxwYXRoIGQ9Ik0zNTAgMjIyYy0xOC0yNS01NS00LTU1IDIzIDAgMzEgNTUgNTkgNTUgNTlzNTUtMjggNTUtNTljMC0yNy0zNy00OC01NS0yM3oiIGZpbGw9IiNjODNlNjEiLz4KPHRleHQgeD0iMzUwIiB5PSIzOTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNmQyNTMyIj5EZWzDrWNpYXMgZGE8L3RleHQ+Cjx0ZXh0IHg9IjM1MCIgeT0iNDg1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMDAiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2ZDI1MzIiPkpvYW5hPC90ZXh0Pgo8cGF0aCBkPSJNMTcwIDUyMGgxNTBNMzgwIDUyMGgxNTAiIHN0cm9rZT0iIzZkMjUzMiIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTM1MCA1MDVjLTE0LTIwLTQ1LTMtNDUgMTggMCAyNiA0NSA0OSA0NSA0OXM0NS0yMyA0NS00OWMwLTIxLTMxLTM4LTQ1LTE4eiIgZmlsbD0iI2M4M2U2MSIvPgo8dGV4dCB4PSIzNTAiIHk9IjYxMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGxldHRlci1zcGFjaW5nPSI5IiBmaWxsPSIjNmQyNTMyIj5QQVNURUxBUklBPC90ZXh0Pgo8L3N2Zz4=" class="logo-large" alt="Delícias da Joana">
+      <p>Sabor, carinho e tradição em cada mordida!</p>
+      <div class="intro-progress" aria-label="Carregamento da aplicação">
+        <div class="intro-percent" id="introPercent">0%</div>
+        <div class="intro-track"><div id="introBar" class="intro-bar"></div></div>
+        <small id="introStatus">A preparar a aplicação...</small>
+      </div>
+      <button id="enterBtn" class="primary hidden">Entrar na aplicação →</button>
+      <button id="googleSplashBtn" class="google-btn hidden">🔐 Entrar / Criar conta</button>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <button class="icon-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIj4KPHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIHJ4PSI5MCIgZmlsbD0iI2ZmZjBlZiIvPgo8Y2lyY2xlIGN4PSIzNTAiIGN5PSIzNTAiIHI9IjI3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzgzZTYxIiBzdHJva2Utd2lkdGg9IjkiLz4KPHBhdGggZD0iTTI0NSAyMTBjLTgtNzAgMjUtMTAyIDY1LTEwMiAyMiAwIDM5IDExIDUwIDI3IDExLTE2IDI4LTI3IDUwLTI3IDQwIDAgNzMgMzIgNjUgMTAyIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM2ZDI1MzIiIHN0cm9rZS13aWR0aD0iMTAiLz4KPHBhdGggZD0iTTI0NSAyMDRoMjEwdjQ1YzAgMjgtMjMgNTEtNTEgNTFIMjk2Yy0yOCAwLTUxLTIzLTUxLTUxeiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNmQyNTMyIiBzdHJva2Utd2lkdGg9IjEwIi8+CjxwYXRoIGQ9Ik0zNTAgMjIyYy0xOC0yNS01NS00LTU1IDIzIDAgMzEgNTUgNTkgNTUgNTlzNTUtMjggNTUtNTljMC0yNy0zNy00OC01NS0yM3oiIGZpbGw9IiNjODNlNjEiLz4KPHRleHQgeD0iMzUwIiB5PSIzOTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNmQyNTMyIj5EZWzDrWNpYXMgZGE8L3RleHQ+Cjx0ZXh0IHg9IjM1MCIgeT0iNDg1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMDAiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2ZDI1MzIiPkpvYW5hPC90ZXh0Pgo8cGF0aCBkPSJNMTcwIDUyMGgxNTBNMzgwIDUyMGgxNTAiIHN0cm9rZT0iIzZkMjUzMiIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTM1MCA1MDVjLTE0LTIwLTQ1LTMtNDUgMTggMCAyNiA0NSA0OSA0NSA0OXM0NS0yMyA0NS00OWMwLTIxLTMxLTM4LTQ1LTE4eiIgZmlsbD0iI2M4M2U2MSIvPgo8dGV4dCB4PSIzNTAiIHk9IjYxMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGxldHRlci1zcGFjaW5nPSI5IiBmaWxsPSIjNmQyNTMyIj5QQVNURUxBUklBPC90ZXh0Pgo8L3N2Zz4=" class="logo-mini" alt="Delícias da Joana">
+    <button class="cart-btn" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+  </header>
+
+  <main id="app">
+    <section id="homeView" class="view active">
+      <div class="hero">
+        <div>
+          <span class="eyebrow">PASTELARIA</span>
+          <h1>Delícias da Joana</h1>
+          <p>Feito com carinho para adoçar o teu dia.</p>
+          <button class="primary" onclick="showView('catalogView')">Ver catálogo</button>
+        </div>
+        <div class="hero-emoji">🧁</div>
+      </div>
+
+      <div class="section-head">
+        <h2>🔥 Promoções</h2>
+        <button onclick="showView('catalogView')">Ver tudo</button>
+      </div>
+      <div id="promotions" class="product-grid"></div>
+
+      <div class="section-head">
+        <h2>🍰 Destaques</h2>
+        <button onclick="showView('catalogView')">Catálogo</button>
+      </div>
+      <div id="featured" class="product-grid"></div>
+
+      <div class="contact-card">
+        <h3>📍 Onde estamos</h3>
+        <p><strong>Distrito:</strong> Moamba</p>
+        <p><strong>Bairro:</strong> Wambalambate</p>
+        <p><strong>Referência:</strong> para quem vai ao Terminal de Tenga</p>
+        <div class="contact-actions">
+          <a class="secondary" href="https://www.google.com/maps/search/?api=1&query=Terminal%20de%20Tenga%20Wambalambate%20Moamba" target="_blank">📍 Ver no mapa</a>
+          <a class="secondary" href="https://wa.me/258845389228" target="_blank">💬 WhatsApp</a>
+          <a class="secondary" href="tel:+258865447572">📞 Ligar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogView" class="view">
+      <div class="page-title">
+        <h2>🍰 Catálogo</h2>
+        <p>Escolhe as tuas delícias favoritas.</p>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-cat="Todos">Todos</button>
+        <button class="filter" data-cat="Doces">Doces</button>
+        <button class="filter" data-cat="Salgados">Salgados</button>
+        <button class="filter" data-cat="Sobremesas">Sobremesas</button>
+      </div>
+      <div id="catalog" class="product-grid"></div>
+    </section>
+
+    <section id="cartView" class="view">
+      <div class="page-title"><h2>🛒 Meu carrinho</h2></div>
+      <div id="cartItems"></div>
+      <div id="cartSummary" class="summary"></div>
+    </section>
+
+    <section id="ordersView" class="view">
+      <div class="page-title"><h2>📦 Minhas encomendas</h2><p>Consulta o histórico e o estado das tuas encomendas.</p></div>
+      <div id="ordersList"></div>
+    </section>
+
+    <section id="messagesView" class="view">
+      <div class="page-title"><h2>💬 Mensagens</h2><p>Fala diretamente com a Delícias da Joana.</p></div>
+      <div id="messagesList" class="messages"></div>
+      <form id="messageForm" class="message-form">
+        <textarea id="messageText" placeholder="Escreve a tua mensagem..." required></textarea>
+        <button class="primary">Enviar mensagem</button>
+      </form>
+    </section>
+
+    <section id="notificationsView" class="view">
+      <div class="page-title"><h2>🔔 Notificações</h2></div>
+      <div id="notificationsList"></div>
+    </section>
+
+    
+<section id="adminView" class="view">
+      <div id="adminAccess" class="admin-access-card">
+        <h2>🔐 Área de Administração</h2>
+        <p>Introduza a palavra-passe para abrir o painel de administração.</p>
+        <label for="adminPassword"><strong>Palavra-passe</strong></label>
+        <input id="adminPassword" type="password" placeholder="Digite a palavra-passe" autocomplete="off">
+        <button id="adminEnterBtn" type="button" class="primary">ENTRAR</button>
+        <p id="adminAccessMessage"></p>
+      </div>
+      <div id="adminPanelContent" class="hidden">
+      <div class="page-title">
+        <h2>👩‍🍳 Administração</h2>
+        <p>Painel exclusivo da administração para publicar produtos, gerir promoções, encomendas e mensagens.</p>
+      </div>
+      <div class="admin-tabs">
+        <button data-admin="products">Produtos</button>
+        <button data-admin="orders">Encomendas</button>
+        <button data-admin="messages">Mensagens</button>
+      </div>
+
+      <div id="adminProducts" class="admin-panel">
+        <form id="productForm" class="admin-form">
+          <input type="hidden" id="productId">
+          <input id="productName" placeholder="Nome do produto" required>
+          <textarea id="productDescription" placeholder="Descrição"></textarea>
+          <input id="productPrice" type="number" min="0" step="0.01" placeholder="Preço (MT)" required>
+          <select id="productCategory">
+            <option>Doces</option><option>Salgados</option><option>Sobremesas</option>
+          </select>
+          <div class="image-upload-box" style="margin:12px 0;padding:14px;border:1px dashed #c9a08e;border-radius:14px;">
+  <label for="productImageFile"><strong>🖼️ Imagem do produto</strong></label>
+  <input id="productImageFile" type="file" accept="image/*" style="display:block;width:100%;margin-top:8px;">
+  <img id="productImagePreview" alt="Pré-visualização" style="display:none;max-width:220px;width:100%;margin-top:10px;border-radius:14px;">
+  <input id="productImage" type="hidden" value="">
+  <small>Escolha uma imagem do telefone. Ela será preparada para o produto.</small>
+</div>
+          <label class="check"><input id="productPromo" type="checkbox"> Promoção</label>
+          <label class="check"><input id="productFeatured" type="checkbox"> Destaque</label>
+          <button class="primary" type="submit">PUBLICAR PRODUTO</button>
+          <button class="secondary" type="button" id="clearProduct">Limpar</button>
+        </form>
+        <div id="adminProductList"></div>
+      </div>
+
+      <div id="adminOrders" class="admin-panel hidden"><div id="adminOrderList"></div></div>
+      <div id="adminMessages" class="admin-panel hidden"><div id="adminMessageList"></div></div>
+      </div>
+    </section>
+  
+
+</main>
+
+  <nav class="bottom-nav">
+    <button data-view="homeView">🏠<span>Início</span></button>
+    <button data-view="catalogView">🍰<span>Catálogo</span></button>
+    <button data-view="ordersView">📦<span>Pedidos</span></button>
+    <button data-view="messagesView">💬<span>Mensagens</span><b id="unreadBadge" class="badge hidden">0</b></button>
+    <button data-view="notificationsView">🔔<span>Avisos</span></button>
+    <button data-view="adminView" class="admin-nav-btn">👩‍🍳<span>Admin</span></button>
+  </nav>
+
+  <div id="sideMenu" class="side-menu">
+    <div class="menu-inner">
+      <button id="closeMenu" class="close">✕</button>
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNzAwIj4KPHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIHJ4PSI5MCIgZmlsbD0iI2ZmZjBlZiIvPgo8Y2lyY2xlIGN4PSIzNTAiIGN5PSIzNTAiIHI9IjI3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzgzZTYxIiBzdHJva2Utd2lkdGg9IjkiLz4KPHBhdGggZD0iTTI0NSAyMTBjLTgtNzAgMjUtMTAyIDY1LTEwMiAyMiAwIDM5IDExIDUwIDI3IDExLTE2IDI4LTI3IDUwLTI3IDQwIDAgNzMgMzIgNjUgMTAyIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM2ZDI1MzIiIHN0cm9rZS13aWR0aD0iMTAiLz4KPHBhdGggZD0iTTI0NSAyMDRoMjEwdjQ1YzAgMjgtMjMgNTEtNTEgNTFIMjk2Yy0yOCAwLTUxLTIzLTUxLTUxeiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNmQyNTMyIiBzdHJva2Utd2lkdGg9IjEwIi8+CjxwYXRoIGQ9Ik0zNTAgMjIyYy0xOC0yNS01NS00LTU1IDIzIDAgMzEgNTUgNTkgNTUgNTlzNTUtMjggNTUtNTljMC0yNy0zNy00OC01NS0yM3oiIGZpbGw9IiNjODNlNjEiLz4KPHRleHQgeD0iMzUwIiB5PSIzOTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjcyIiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNmQyNTMyIj5EZWzDrWNpYXMgZGE8L3RleHQ+Cjx0ZXh0IHg9IjM1MCIgeT0iNDg1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMDAiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2ZDI1MzIiPkpvYW5hPC90ZXh0Pgo8cGF0aCBkPSJNMTcwIDUyMGgxNTBNMzgwIDUyMGgxNTAiIHN0cm9rZT0iIzZkMjUzMiIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTM1MCA1MDVjLTE0LTIwLTQ1LTMtNDUgMTggMCAyNiA0NSA0OSA0NSA0OXM0NS0yMyA0NS00OWMwLTIxLTMxLTM4LTQ1LTE4eiIgZmlsbD0iI2M4M2U2MSIvPgo8dGV4dCB4PSIzNTAiIHk9IjYxMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGxldHRlci1zcGFjaW5nPSI5IiBmaWxsPSIjNmQyNTMyIj5QQVNURUxBUklBPC90ZXh0Pgo8L3N2Zz4=" class="menu-logo" alt="">
+      <div id="userBox" class="user-box">Não autenticado</div>
+      <button onclick="showView('homeView'); closeSideMenu()">🏠 Início</button>
+      <button onclick="showView('catalogView'); closeSideMenu()">🍰 Catálogo</button>
+      <button onclick="showView('cartView'); closeSideMenu()">🛒 Carrinho</button>
+      <button onclick="showView('ordersView'); closeSideMenu()">📦 Encomendas</button>
+      <button onclick="showView('messagesView'); closeSideMenu()">💬 Mensagens</button>
+      <button onclick="showView('notificationsView'); closeSideMenu()">🔔 Notificações</button>
+      <button id="adminMenuBtn" onclick="showView('adminView'); closeSideMenu()">👩‍🍳 Administração</button>
+      <button id="loginBtn" class="google-btn">🔐 Entrar / Criar conta</button>
+      <button id="logoutBtn" class="secondary hidden">Sair</button>
+      <div class="contact-mini">
+        <a href="https://wa.me/258845389228" target="_blank">💬 84 538 9228</a>
+        <a href="tel:+258865447572">📞 86 544 7572</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="authModal" class="hidden" style="position:fixed;inset:0;z-index:250;background:#0008;display:none;align-items:center;justify-content:center;padding:20px">
+    <div style="background:#fff;border-radius:18px;padding:22px;width:min(420px,100%);box-shadow:0 20px 60px #0004">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <h2 style="margin:0">🔐 Acesso</h2>
+        <button id="closeAuth" type="button" class="secondary">✕</button>
+      </div>
+      <p id="authModeText" class="muted">Entre com o teu email e palavra-passe.</p>
+      <input id="authName" placeholder="Nome completo" style="display:none;width:100%;margin:7px 0;padding:12px;border:1px solid var(--line);border-radius:10px">
+      <input id="authEmail" type="email" placeholder="Email" autocomplete="email" style="width:100%;margin:7px 0;padding:12px;border:1px solid var(--line);border-radius:10px">
+      <input id="authPassword" type="password" placeholder="Palavra-passe" autocomplete="current-password" style="width:100%;margin:7px 0;padding:12px;border:1px solid var(--line);border-radius:10px">
+      <button id="authSubmit" class="primary" type="button" style="width:100%;margin-top:8px">ENTRAR</button>
+      <button id="authToggle" class="secondary" type="button" style="width:100%;margin-top:8px">Criar conta</button>
+      <p id="authMessage" style="margin:10px 0 0"></p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script>
+window.SUPABASE_URL = "https://gcjyssmaubdhokxoquee.supabase.co";
+window.SUPABASE_ANON_KEY = "sb_publishable_sIR8DuTMbfd-Xi4FTR-X6A_rEvyxgCW";
+</script>
+  <script>
+const DEMO_PRODUCTS = [];
+
+let sb = null;
+let products = [];
+let cart = JSON.parse(localStorage.getItem("dj_cart") || "[]");
+let currentUser = null;
+let profile = null;
+let demoMode = false;
+
+document.addEventListener("DOMContentLoaded", async () => {
+  bindUI();
+  products = [];
+  renderAll();
+  startIntro();
+
+
+  if(window.SUPABASE_URL && !window.SUPABASE_URL.includes("SEU-PROJETO") &&
+     window.SUPABASE_ANON_KEY && !window.SUPABASE_ANON_KEY.includes("SUA_CHAVE")){
+    sb = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
+    const {data:{session}} = await sb.auth.getSession();
+    if(session) await onSession(session);
+    sb.auth.onAuthStateChange((_event, session)=>{ onSession(session); });
+    await loadProducts();
+  } else {
+    demoMode = true;
+    products = [];
+    updateUserBox();
+    renderAll();
+  }
+});
+
+function startIntro(){
+  const percent = document.getElementById("introPercent");
+  const bar = document.getElementById("introBar");
+  const status = document.getElementById("introStatus");
+  const enter = document.getElementById("enterBtn");
+  const google = document.getElementById("googleSplashBtn");
+  let n = 0;
+
+  const timer = setInterval(()=>{
+    n++;
+    percent.textContent = n + "%";
+    bar.style.width = n + "%";
+
+    if(n < 30) status.textContent = "A preparar a aplicação...";
+    else if(n < 60) status.textContent = "A organizar o catálogo...";
+    else if(n < 90) status.textContent = "A preparar os serviços...";
+    else if(n < 100) status.textContent = "Quase pronto...";
+    else {
+      status.textContent = "Aplicação pronta!";
+      clearInterval(timer);
+      enter.classList.remove("hidden");
+      google.classList.remove("hidden");
+      setTimeout(()=>{
+        document.getElementById("splash").style.display="none";
+      }, 500);
+    }
+  }, 22);
+}
+
+function bindUI(){
+  document.getElementById("enterBtn").onclick=()=>document.getElementById("splash").style.display="none";
+  document.getElementById("googleSplashBtn").onclick=openAuth;
+  document.getElementById("loginBtn").onclick=openAuth;
+  document.getElementById("logoutBtn").onclick=logout;
+  document.getElementById("menuBtn").onclick=openSideMenu;
+  document.getElementById("closeMenu").onclick=closeSideMenu;
+  document.getElementById("closeAuth").onclick=closeAuth;
+  document.getElementById("authSubmit").onclick=submitAuth;
+  document.getElementById("authToggle").onclick=toggleAuthMode;
+  document.getElementById("cartBtn").onclick=()=>showView("cartView");
+  document.querySelectorAll(".bottom-nav button").forEach(b=>b.onclick=()=>showView(b.dataset.view));
+  document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>filterCatalog(b.dataset.cat));
+  document.getElementById("messageForm").onsubmit=sendMessage;
+  document.getElementById("productForm").onsubmit=saveProduct;
+  document.getElementById("clearProduct").onclick=clearProductForm;
+  document.querySelectorAll(".admin-tabs button").forEach(b=>b.onclick=()=>showAdminTab(b.dataset.admin));
+}
+
+async function onSession(session){
+  currentUser=session?.user || null;
+  if(currentUser && sb) await loadProfile();
+  updateUserBox();
+  await loadUserData();
+  renderAll();
+}
+
+function openAuth(){
+  const m=document.getElementById("authModal");
+  if(m){m.style.display="flex";m.classList.remove("hidden");document.getElementById("authEmail")?.focus();}
+}
+function closeAuth(){
+  const m=document.getElementById("authModal");
+  if(m){m.style.display="none";m.classList.add("hidden");}
+}
+let authSignupMode=false;
+async function submitAuth(){
+  if(!sb){showToast("Supabase não está disponível.");return}
+  const email=document.getElementById("authEmail").value.trim();
+  const password=document.getElementById("authPassword").value;
+  const name=document.getElementById("authName").value.trim();
+  const msg=document.getElementById("authMessage");
+  if(!email||!password||(authSignupMode&&!name)){msg.textContent="Preenche todos os campos.";msg.style.color="crimson";return}
+  msg.textContent="A processar...";msg.style.color="";
+  if(authSignupMode){
+    const {data,error}=await sb.auth.signUp({email,password,options:{data:{full_name:name},emailRedirectTo:location.origin+location.pathname}});
+    if(error){msg.textContent=error.message;msg.style.color="crimson";return}
+    msg.textContent=data.session?"Conta criada e sessão iniciada.":"Conta criada. Confirma o email se for solicitado.";msg.style.color="green";
+    if(data.session){await onSession(data.session);setTimeout(closeAuth,500)}
+  }else{
+    const {data,error}=await sb.auth.signInWithPassword({email,password});
+    if(error){msg.textContent=error.message;msg.style.color="crimson";return}
+    msg.textContent="Login efetuado.";msg.style.color="green";
+    await onSession(data.session);setTimeout(closeAuth,400);
+  }
+}
+function toggleAuthMode(){
+  authSignupMode=!authSignupMode;
+  document.getElementById("authName").style.display=authSignupMode?"block":"none";
+  document.getElementById("authSubmit").textContent=authSignupMode?"CRIAR CONTA":"ENTRAR";
+  document.getElementById("authToggle").textContent=authSignupMode?"Já tenho conta":"Criar conta";
+  document.getElementById("authModeText").textContent=authSignupMode?"Cria uma conta com email e palavra-passe.":"Entre com o teu email e palavra-passe.";
+  document.getElementById("authPassword").autocomplete=authSignupMode?"new-password":"current-password";
+  document.getElementById("authMessage").textContent="";
+}
+
+async function logout(){
+  if(sb) await sb.auth.signOut();
+  currentUser=null; profile=null; updateUserBox(); showToast("Sessão terminada.");
+}
+
+async function loadProfile(){
+  const {data,error}=await sb.from("profiles").select("*").eq("id",currentUser.id).maybeSingle();
+  if(error) console.error(error);
+  profile=data;
+}
+
+async function loadProducts(){
+  if(!sb) return;
+  const {data,error}=await sb.from("products").select("*").eq("active",true).order("created_at",{ascending:false});
+  if(!error && data?.length) products=data;
+  renderAll();
+}
+
+async function loadUserData(){
+  if(!sb || !currentUser) return;
+  await loadOrders(); await loadMessages(); await loadNotifications();
+}
+
+function isAdmin(){ return profile?.role==="admin"; }
+
+function showView(id){
+  document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
+  const target=document.getElementById(id);
+  if(!target) return;
+  target.classList.add("active");
+  if(id==="cartView") renderCart();
+  if(id==="ordersView") loadOrders().then(renderOrders);
+  if(id==="messagesView") loadMessages().then(renderMessages);
+  if(id==="notificationsView") loadNotifications().then(renderNotifications);
+  if(id==="adminView") {
+    const unlocked=sessionStorage.getItem("dj_admin_unlocked")==="1";
+    document.getElementById("adminAccess")?.classList.toggle("hidden",unlocked);
+    document.getElementById("adminPanelContent")?.classList.toggle("hidden",!unlocked);
+    if(unlocked) loadAdmin();
+  }
+  document.querySelectorAll(".bottom-nav button").forEach(b=>b.classList.toggle("active",b.dataset.view===id));
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function openSideMenu(){document.getElementById("sideMenu").classList.add("open")}
+function closeSideMenu(){document.getElementById("sideMenu").classList.remove("open")}
+window.closeSideMenu=closeSideMenu; window.showView=showView;
+
+function renderAll(){
+  renderProducts("promotions", products.filter(p=>p.promotion).slice(0,4));
+  renderProducts("featured", products.filter(p=>p.featured).slice(0,4));
+  renderProducts("catalog", products);
+  renderCart();
+  updateUserBox();
+}
+
+function renderProducts(targetId,list){
+  const el=document.getElementById(targetId);
+  if(!el)return;
+  el.innerHTML=list.length?list.map(productCard).join(""):`<div class="order">O catálogo está vazio. Os produtos serão publicados pela administração.</div>`;
+}
+function productCard(p){
+  const img=p.image?`<img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}">`:"🍰";
+  return `<article class="product"><div class="product-img">${img}</div><div class="product-body">
+    ${p.promotion?'<span class="tag">PROMOÇÃO</span>':''}
+    <h3>${escapeHtml(p.name)}</h3><p>${escapeHtml(p.description||"")}</p>
+    <div class="product-row"><span class="price">${money(p.price)}</span><button class="add" onclick="addToCart('${p.id}')">+ Carrinho</button></div>
+  </div></article>`;
+}
+window.addToCart=addToCart;
+function addToCart(id){
+  const p=products.find(x=>String(x.id)===String(id)); if(!p)return;
+  const item=cart.find(x=>String(x.id)===String(id));
+  if(item)item.qty++; else cart.push({id:p.id,qty:1});
+  saveCart(); showToast(`${p.name} foi adicionado ao carrinho.`);
+}
+function saveCart(){
+  cart = (Array.isArray(cart) ? cart : []).filter(i => products.some(p => String(p.id) === String(i.id)) && Number(i.qty) > 0);
+  localStorage.setItem("dj_cart", JSON.stringify(cart));
+  const count = cart.reduce((a,b)=>a+Number(b.qty||0),0);
+  const badge = document.getElementById("cartCount");
+  if(badge) badge.textContent = count;
+  renderCart();
+}
+function renderCart(){
+  const el=document.getElementById("cartItems"), sum=document.getElementById("cartSummary");
+  if(!el)return;
+  const valid = cart.filter(i => products.some(p => String(p.id) === String(i.id)));
+  if(!valid.length){
+    el.innerHTML='<div class="order"><strong>🛒 Carrinho vazio</strong><p>Quando adicionares um produto, ele aparecerá aqui.</p></div>';
+    if(sum) sum.innerHTML="";
+    return;
+  }
+  let total=0;
+  el.innerHTML=valid.map(i=>{
+    const p=products.find(x=>String(x.id)===String(i.id));
+    if(!p)return "";
+    const qty=Number(i.qty)||1;
+    total+=Number(p.price||0)*qty;
+    return `<div class="cart-line">
+      <div><strong>${escapeHtml(p.name)}</strong><div class="muted">${money(p.price)} × ${qty}</div></div>
+      <div class="qty"><button onclick="changeQty('${p.id}',-1)">−</button><b>${qty}</b><button onclick="changeQty('${p.id}',1)">+</button></div>
+    </div>`;
+  }).join("");
+  if(sum) sum.innerHTML=`<div class="total"><span>Total</span><span>${money(total)}</span></div>
+    <button class="primary" style="width:100%" onclick="checkout()">Continuar para encomenda</button>`;
+}
+window.changeQty=changeQty;
+function changeQty(id,d){
+  const i=cart.find(x=>String(x.id)===String(id));
+  if(!i)return;
+  i.qty=Number(i.qty||0)+d;
+  if(i.qty<=0) cart=cart.filter(x=>String(x.id)!==String(id));
+  saveCart();
+}
+
+function filterCatalog(cat){
+  document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.cat===cat));
+  renderProducts("catalog",cat==="Todos"?products:products.filter(p=>p.category===cat));
+}
+
+async function loadOrders(){
+  if(!sb||!currentUser)return;
+  const {data,error}=await sb.from("orders").select("*,order_items(*,products(name))").eq("user_id",currentUser.id).order("created_at",{ascending:false});
+  window.userOrders=error?[]:(data||[]); renderOrders();
+}
+function renderOrders(){
+  const el=document.getElementById("ordersList"); const list=window.userOrders||[];
+  el.innerHTML=list.length?list.map(o=>`<div class="order"><div class="order-head"><strong>Pedido #${String(o.id).slice(0,8)}</strong><span class="status">${escapeHtml(o.status)}</span></div>
+  <p>${money(o.total_amount)} · Pagamento: ${escapeHtml(o.payment_status||"pending")}</p><small>${new Date(o.created_at).toLocaleString()}</small></div>`).join(""):'<div class="order">Ainda não tens encomendas.</div>';
+}
+
+async function sendMessage(e){
+  e.preventDefault();const text=document.getElementById("messageText").value.trim();if(!text)return;
+  if(!currentUser){showToast("Entra com a tua conta para enviar mensagens.");return}
+  if(!sb){showToast("O serviço de mensagens precisa do Supabase.");return}
+  const {error}=await sb.from("messages").insert({user_id:currentUser.id,sender_role:"customer",body:text});
+  if(error)showToast(error.message);else{document.getElementById("messageText").value="";await loadMessages();renderMessages();showToast("Mensagem enviada.");}
+}
+async function loadMessages(){
+  if(!sb||!currentUser)return;
+  const {data,error}=await sb.from("messages").select("*").eq("user_id",currentUser.id).order("created_at",{ascending:true});
+  window.userMessages=error?[]:(data||[]);renderMessages();
+}
+function renderMessages(){
+  const el=document.getElementById("messagesList"), list=window.userMessages||[];
+  el.innerHTML=list.length?list.map(m=>`<div class="message ${m.sender_role==="admin"?"from-admin":""}"><b>${m.sender_role==="admin"?"Delícias da Joana":"Tu"}</b><p>${escapeHtml(m.body)}</p><small>${new Date(m.created_at).toLocaleString()}</small></div>`).join(""):'<div class="order">Ainda não há mensagens.</div>';
+}
+
+async function loadNotifications(){
+  if(!sb||!currentUser)return;
+  const {data,error}=await sb.from("notifications").select("*").eq("user_id",currentUser.id).order("created_at",{ascending:false});
+  window.userNotifications=error?[]:(data||[]);renderNotifications();
+}
+function renderNotifications(){
+  const el=document.getElementById("notificationsList"),list=window.userNotifications||[];
+  el.innerHTML=list.length?list.map(n=>`<div class="notification"><strong>${escapeHtml(n.title)}</strong><p>${escapeHtml(n.body||"")}</p></div>`).join(""):'<div class="order">Não tens notificações.</div>';
+}
+
+function updateUserBox(){
+  const name=currentUser?.user_metadata?.full_name||currentUser?.email||"Não autenticado";
+  document.getElementById("userBox").textContent=name;
+  document.getElementById("loginBtn").classList.toggle("hidden",!!currentUser);
+  document.getElementById("logoutBtn").classList.toggle("hidden",!currentUser);
+}
+
+function showAdminTab(tab){
+  document.querySelectorAll(".admin-panel").forEach(x=>x.classList.add("hidden"));
+  document.getElementById("admin"+tab.charAt(0).toUpperCase()+tab.slice(1)).classList.remove("hidden");
+  if(tab==="orders")loadAdminOrders();if(tab==="messages")loadAdminMessages();if(tab==="products")loadAdminProducts();
+}
+async function loadAdmin(){loadAdminProducts();showAdminTab("products")}
+async function loadAdminProducts(){
+  const el=document.getElementById("adminProductList");el.innerHTML=products.map(p=>`<div class="admin-product"><div><b>${escapeHtml(p.name)}</b><br>${money(p.price)} · ${escapeHtml(p.category)}</div><div><button onclick="editProduct('${p.id}')">Editar</button> <button onclick="deleteProduct('${p.id}')">Excluir</button></div></div>`).join("");
+}
+window.editProduct=editProduct;
+function editProduct(id){const p=products.find(x=>String(x.id)===String(id));if(!p)return;document.getElementById("productId").value=p.id;document.getElementById("productName").value=p.name;document.getElementById("productDescription").value=p.description||"";document.getElementById("productPrice").value=p.price;document.getElementById("productCategory").value=p.category;document.getElementById("productImage").value=p.image||"";document.getElementById("productPromo").checked=!!p.promotion;document.getElementById("productFeatured").checked=!!p.featured}
+async function saveProduct(e){
+  e.preventDefault();
+  if(!sb){showToast("Supabase não está configurado.");return}
+  if(!currentUser){showToast("Entra com a tua conta primeiro.");return}
+  if(!isAdmin()){showToast("Esta conta não é administradora. Define role = admin no perfil.");return}
+
+  const id=document.getElementById("productId").value;
+  const file=document.getElementById("productImageFile")?.files?.[0] || null;
+  let imageUrl=document.getElementById("productImage").value||null;
+
+  if(file){
+    if(!file.type.startsWith("image/")){showToast("Escolhe uma imagem válida.");return}
+    if(file.size>8*1024*1024){showToast("A imagem deve ter no máximo 8 MB.");return}
+    showToast("A enviar imagem...");
+    const ext=(file.name.split(".").pop()||"jpg").toLowerCase().replace(/[^a-z0-9]/g,"")||"jpg";
+    const path=`products/${currentUser.id}/${crypto.randomUUID()}.${ext}`;
+    const {error:uploadError}=await sb.storage.from("product-images").upload(path,file,{cacheControl:"3600",upsert:false,contentType:file.type});
+    if(uploadError){showToast("Erro no upload: "+uploadError.message);return}
+    const {data:urlData}=sb.storage.from("product-images").getPublicUrl(path);
+    imageUrl=urlData.publicUrl;
+  }
+
+  const row={name:document.getElementById("productName").value.trim(),description:document.getElementById("productDescription").value.trim(),price:Number(document.getElementById("productPrice").value),category:document.getElementById("productCategory").value,image:imageUrl,promotion:document.getElementById("productPromo").checked,featured:document.getElementById("productFeatured").checked,active:true};
+  if(!row.name||!Number.isFinite(row.price)){showToast("Preenche o nome e o preço corretamente.");return}
+  const q=id?sb.from("products").update(row).eq("id",id):sb.from("products").insert(row);
+  const {error}=await q;
+  if(error)showToast(error.message);
+  else{clearProductForm();await loadProducts();loadAdminProducts();showToast("Produto publicado com sucesso.")}
+}
+
+window.deleteProduct=deleteProduct;
+async function deleteProduct(id){if(!sb||!isAdmin())return;if(!confirm("Excluir este produto?"))return;const {error}=await sb.from("products").update({active:false}).eq("id",id);if(error)showToast(error.message);else{await loadProducts();loadAdminProducts()}}
+function clearProductForm(){document.getElementById("productForm").reset();document.getElementById("productId").value="";const p=document.getElementById("productImagePreview");if(p){p.style.display="none";p.removeAttribute("src")};const h=document.getElementById("productImage");if(h)h.value=""}
+async function loadAdminOrders(){
+  const el=document.getElementById("adminOrderList");if(!sb)return;
+  const {data,error}=await sb.from("orders").select("*,profiles(full_name,email),order_items(*,products(name))").order("created_at",{ascending:false});
+  el.innerHTML=error?`<div class="order">${escapeHtml(error.message)}</div>`:(data||[]).map(o=>`<div class="order"><b>#${String(o.id).slice(0,8)}</b> · ${escapeHtml(o.profiles?.full_name||o.profiles?.email||"Cliente")} · ${money(o.total_amount)}<p>Estado: <strong>${escapeHtml(o.status)}</strong></p><button class="secondary" onclick="setOrderStatus('${o.id}','confirmed')">Confirmar</button> <button class="secondary" onclick="setOrderStatus('${o.id}','completed')">Concluída</button></div>`).join("")||'<div class="order">Nenhuma encomenda.</div>';
+}
+window.setOrderStatus=setOrderStatus;
+async function setOrderStatus(id,status){const {error}=await sb.from("orders").update({status}).eq("id",id);if(error)showToast(error.message);else{showToast("Estado atualizado.");loadAdminOrders()}}
+async function loadAdminMessages(){
+  const el=document.getElementById("adminMessageList");if(!sb)return;
+  const {data,error}=await sb.from("messages").select("*,profiles(full_name,email)").order("created_at",{ascending:false});
+  el.innerHTML=error?`<div class="order">${escapeHtml(error.message)}</div>`:(data||[]).map(m=>`<div class="message"><b>${escapeHtml(m.profiles?.full_name||m.profiles?.email||"Cliente")}</b><p>${escapeHtml(m.body)}</p><small>${new Date(m.created_at).toLocaleString()}</small><br><button class="secondary" onclick="replyMessage('${m.user_id}')">Responder</button></div>`).join("")||'<div class="order">Nenhuma mensagem.</div>';
+}
+window.replyMessage=async function(userId){const text=prompt("Escreva a resposta:");if(!text)return;const {error}=await sb.from("messages").insert({user_id:userId,sender_role:"admin",body:text});if(error)showToast(error.message);else{await sb.from("notifications").insert({user_id:userId,title:"Nova resposta",body:"A Delícias da Joana respondeu à tua mensagem."});showToast("Resposta enviada.");loadAdminMessages();}};
+
+function money(v){return `${Number(v||0).toLocaleString("pt-MZ",{minimumFractionDigits:2,maximumFractionDigits:2})} MT`}
+function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+function showToast(t){const e=document.getElementById("toast");e.textContent=t;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),2800)}
+saveCart();
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const ACCESS_PASSWORD = "123456"; // palavra-passe inicial
+  const form = document.getElementById("adminAccessForm");
+  const pass = document.getElementById("adminPassword");
+  const msg = document.getElementById("adminAccessMessage");
+  const access = document.getElementById("adminAccess");
+  const admin = document.getElementById("admin");
+  const image = document.getElementById("productImage");
+  const preview = document.getElementById("productImagePreview");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (pass.value === ACCESS_PASSWORD) {
+        access.style.display = "none";
+        if (admin) admin.style.display = "";
+        msg.textContent = "";
+        pass.value = "";
+      } else {
+        msg.textContent = "Palavra-passe incorreta.";
+        msg.style.color = "#d33";
+      }
+    });
+  }
+
+  if (image && preview) {
+    image.addEventListener("change", function () {
+      const file = image.files && image.files[0];
+      if (!file) {
+        preview.style.display = "none";
+        preview.removeAttribute("src");
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        preview.src = e.target.result;
+        preview.style.display = "block";
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+});
+</script>
+
+
+
+<script id="simpleAdminAccess">
+document.addEventListener("DOMContentLoaded", function () {
+  const PASSWORD = "123456";
+  const access = document.getElementById("adminAccess");
+  const panel = document.getElementById("adminView");
+  const input = document.getElementById("adminPassword");
+  const button = document.getElementById("adminEnterBtn");
+  const message = document.getElementById("adminAccessMessage");
+  const image = document.getElementById("productImage");
+  const preview = document.getElementById("productImagePreview");
+
+  if (sessionStorage.getItem("dj_admin_unlocked")==="1") {
+    if (access) access.classList.add("hidden");
+    const content=document.getElementById("adminPanelContent");
+    if (content) content.classList.remove("hidden");
+  }
+
+  function openAdmin() {
+    sessionStorage.setItem("dj_admin_unlocked","1");
+    if (access) access.classList.add("hidden");
+    const content=document.getElementById("adminPanelContent");
+    if (content) content.classList.remove("hidden");
+    if (panel) {
+      document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+      panel.classList.add("active");
+      document.querySelectorAll(".bottom-nav button").forEach(b=>b.classList.toggle("active",b.dataset.view==="adminView"));
+      panel.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+    if (typeof loadAdmin === "function") loadAdmin();
+  }
+
+  if (button) {
+    button.addEventListener("click", function () {
+      if (input && input.value === PASSWORD) {
+        if (!sb || !currentUser) {
+          if(message){message.textContent="Entra com a tua conta primeiro.";message.style.color="crimson";}
+          return;
+        }
+        if (!isAdmin()) {
+          if(message){message.textContent="A tua conta ainda não é administradora. No Supabase, define role = admin no teu perfil.";message.style.color="crimson";}
+          return;
+        }
+        if (message) {
+          message.textContent = "Acesso autorizado.";
+          message.style.color = "green";
+        }
+        openAdmin();
+      } else {
+        if (message) {
+          message.textContent = "Palavra-passe incorreta.";
+          message.style.color = "crimson";
+        }
+        if (input) {
+          input.value = "";
+          input.focus();
+        }
+      }
+    });
+  }
+
+  if (input) {
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && button) button.click();
+    });
+  }
+
+  if (image && preview) {
+    image.addEventListener("change", function () {
+      const file = image.files && image.files[0];
+      if (!file) {
+        preview.style.display = "none";
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = e => {
+        preview.src = e.target.result;
+        preview.style.display = "block";
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+});
+</script>
+
+
+<script id="appOrganizationFix">
+document.addEventListener("DOMContentLoaded", function(){
+  const fileInput=document.getElementById("productImageFile");
+  const hiddenImage=document.getElementById("productImage");
+  const preview=document.getElementById("productImagePreview");
+
+  if(fileInput && hiddenImage && preview){
+    fileInput.addEventListener("change", function(){
+      const file=fileInput.files && fileInput.files[0];
+      if(!file){
+        hiddenImage.value="";
+        preview.style.display="none";
+        preview.removeAttribute("src");
+        return;
+      }
+      if(!file.type.startsWith("image/")){
+        fileInput.value="";
+        hiddenImage.value="";
+        preview.style.display="none";
+        showToast("Escolha uma imagem válida.");
+        return;
+      }
+      const reader=new FileReader();
+      reader.onload=function(e){
+        hiddenImage.value=e.target.result;
+        preview.src=e.target.result;
+        preview.style.display="block";
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  // Remove stale cart entries from previous versions.
+  try{
+    const stored=JSON.parse(localStorage.getItem("dj_cart")||"[]");
+    cart=Array.isArray(stored)?stored:[];
+  }catch(e){ cart=[]; }
+  if(typeof saveCart==="function") saveCart();
+});
+</script>
+
+</body>
+</html>
